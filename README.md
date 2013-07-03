@@ -1,4 +1,4 @@
-# Ratpack Track MY Stuff App - NO DB
+# Ratpack Track MY Stuff Simple CRUD Example
 
 A simple Groovy/Ratpack CRUD application using the simple GStorm ORM (https://github.com/kdabir/gstorm) and HSQLDB (http://hsqldb.org/) as the database.
 This is a port of a version I created previously using Sinatra/Ruby.
