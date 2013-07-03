@@ -18,7 +18,7 @@ https://github.com/ratpack/ratpack/issues/67
 
 ratpack.groovy is the main app/script
 
-I have also included a Main.groovy which is a Groovy Application htta loads the Groovy scripts
+I have also included a Main.groovy which is a Groovy Application that loads the Groovy scripts
 
 NOTE: Because the GStorm verson that Groovy Grapes will grab was built with a different version of Java than what I have installed,
 I built the jar file locally and start with a batch file (yes, I'm using windows, so what???) run_app.bat.
