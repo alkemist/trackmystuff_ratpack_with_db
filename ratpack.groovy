@@ -81,7 +81,9 @@ ratpack {
 			def message = "Just created Item " + item.name + " with id " + item.id
 			println message
 			
-            get(TemplateRenderer).render "index.html", title: "Groovy Track My Stuff"
+            // get(TemplateRenderer).render "index.html", title: "Groovy Track My Stuff"
+		    // Instead of a reder, send a redirect!
+            response.redirect("/")			
         }									
 		
 		// http://localhost:5050/update/item/1
@@ -99,7 +101,9 @@ ratpack {
             item.save()  // save it		
 		
             // response.send "Now updating item with ID: ${pathTokens.id}"
-            get(TemplateRenderer).render "index.html", title: "Groovy Track My Stuff"			
+            // get(TemplateRenderer).render "index.html", title: "Groovy Track My Stuff"	
+			// Instead of a reder, send a redirect!
+            response.redirect("/")			
         }											
 		
 		// http://localhost:5050/delete/item/1
@@ -117,7 +121,9 @@ ratpack {
 			def newItem = new Item(id: item.id, name: item.name)
 			newItem.delete()
 			
-            get(TemplateRenderer).render "index.html", title: "Groovy Track My Stuff"			
+            // get(TemplateRenderer).render "index.html", title: "Groovy Track My Stuff"
+			// Instead of a reder, send a redirect!
+            response.redirect("/")						
         }									
 
         assets "public"

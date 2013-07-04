@@ -7,12 +7,10 @@ WARNING: GStorm is a new project and might change. I actually used the 0.3/0.4 v
 
 This was created as a learning and proof-of-concept project for BOTH Groovy and Ratpack, and is not expected to be beautiful by any means.
 
-KNOWN BUG: For the update and delete options, the icons "disappear", as the default route is not invoked (or the page is not being redirected to it).
-I have to figure out the best way to do this, but for now, you can just go to the localhost:5050 page and it will reload the icons.
-
 As, I said, this is a learning tool and is a works-in-progress.
 
-Also, I am not closing the connection right now. There is a feature request in Ratpack for a shutdown hook so this can be done:
+Known "issue":
+I am not closing the connection right now. There is a feature request in Ratpack for a shutdown hook so this can be done:
 
 https://github.com/ratpack/ratpack/issues/67
 
